@@ -1,0 +1,24 @@
+@"
+*.iml
+.gradle/
+.kotlin/
+local.properties
+
+.idea/
+build/
+*/build/
+.captures/
+captures/
+.externalNativeBuild/
+.cxx/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+
+debug.keystore
+*.jks
+*.keystore
+"@ | Set-Content .gitignore

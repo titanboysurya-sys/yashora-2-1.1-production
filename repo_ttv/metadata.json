@@ -1,0 +1,6 @@
+{
+  "name": "Yashora Reel Generator",
+  "description": "Premium AI-powered video script analyzer and video generation pipeline with standard built-in editor, multi-theme selector, and AdMob monetization setup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

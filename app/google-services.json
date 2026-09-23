@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "259389653327",
+    "project_id": "ritvyomai",
+    "storage_bucket": "ritvyomai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259389653327:android:6bfcf3399c6822a2be053a",
+        "android_client_info": {
+          "package_name": "com.ritvyom.yashoraReelgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259389653327-h9pin3v2hin4ec6i0kmdv3khp81ffkcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritvyom.yashoraReelgenerator",
+            "certificate_hash": "1928148269b287d5ac9d1c7e5cfc0a293ae6b316"
+          }
+        },
+        {
+          "client_id": "259389653327-hvelb6fqemmek91q2sgovf3g4cjsds0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritvyom.yashoraReelgenerator",
+            "certificate_hash": "579970957be95c5c6312db26b4136bc1db298db7"
+          }
+        },
+        {
+          "client_id": "259389653327-qsl3h6fbl96laojvjnu2kv9jhjlm4uhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritvyom.yashoraReelgenerator",
+            "certificate_hash": "b8d7eeb0e885bf03ce1cbd530f138a98dfc41a09"
+          }
+        },
+        {
+          "client_id": "259389653327-rnbqsmg7rk197tso7cmg2nra9rrfu10c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADoK6MmEXWotbB2yNb33wNm8w-iQ_22hY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259389653327-rnbqsmg7rk197tso7cmg2nra9rrfu10c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

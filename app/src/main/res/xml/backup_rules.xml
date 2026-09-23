@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude user BYOK API keys and encryption keystores from cloud autobackup -->
+    <exclude domain="sharedpref" path="yashora_ai_byok_secure_keys.xml"/>
+</full-backup-content>

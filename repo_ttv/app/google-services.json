@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "720068421416",
+    "project_id": "newreelgenerator",
+    "storage_bucket": "newreelgenerator.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720068421416:android:09e51610bdba4566f6921d",
+        "android_client_info": {
+          "package_name": "com.ritvyom.yashoraReelgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720068421416-b32e2mmjm6f4e0hqc01ssg66manhi5lt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritvyom.yashoraReelgenerator",
+            "certificate_hash": "1928148269b287d5ac9d1c7e5cfc0a293ae6b316"
+          }
+        },
+        {
+          "client_id": "720068421416-g5bro6rp0n54f9jvqcia43cc7mfvahui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritvyom.yashoraReelgenerator",
+            "certificate_hash": "2a9989b63493e23d9e3bb3afe08e5706025bb8c4"
+          }
+        },
+        {
+          "client_id": "720068421416-9hjjstf34i93hrkfvva41j23u4cvaes6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgk8mDdx3_hiPvs0MNEGQOj_5Ly29LBMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720068421416-2t5s6ej7s6al817sue98cju54tc7grq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

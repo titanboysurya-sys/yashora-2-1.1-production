@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Security rules for the new centralized project cache
+    match /project_cache/{documentId} {
+      // Anyone can query the shared cache to reuse high-quality assets and save API costs
+      allow read: if true;
+      
+      // Allow writing if the mapping fields are correctly defined
+      allow create, update: if request.resource.data.query is string
+                            && request.resource.data.media_urls is list
+                            && request.resource.data.timestamps is list;
+    }
+    
+    // Legacy support collection security rules
+    match /script_media_mappings/{documentId} {
+      allow read: if true;
+      allow write: if request.resource.data.query is string;
+    }
+
+    // Security rules for shared scripts and projects
+    match /shared_scripts/{projectId} {
+      allow read: if true;
+      allow create: if request.resource.data.title != null;
+      allow update, delete: if true;
+    }
+  }
+}

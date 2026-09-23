@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yashora Reel Generator</string>
+    <string name="empty" translatable="false"></string>
+    <string name="attribution_label">Default Attribution</string>
+</resources>

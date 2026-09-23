@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude user BYOK API keys and encryption keystores from cloud autobackup -->
+        <exclude domain="sharedpref" path="yashora_ai_byok_secure_keys.xml"/>
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow secure migration to new device only if desired, or exclude credentials -->
+        <exclude domain="sharedpref" path="yashora_ai_byok_secure_keys.xml"/>
+    </device-transfer>
+</data-extraction-rules>

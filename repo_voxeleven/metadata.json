@@ -1,0 +1,6 @@
+{
+  "name": "VoxEleven",
+  "description": "Generate high-quality voice recordings from text using the ElevenLabs Text-to-Speech API. Save your API key, choose voices, customize parameters, and manage generated audio files.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Ambient Backlight Glow behind Yashora Logo -->
+    <path android:pathData="M54,24 A30,30 0 1,1 53.99,24 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="48"
+                android:gradientRadius="34"
+                android:type="radial">
+                <item android:color="#4000F0FF" android:offset="0.0" />
+                <item android:color="#207B2CBF" android:offset="0.6" />
+                <item android:color="#00000000" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Outer Left Wing / Branch (Proportionally scaled with top padding) -->
+    <path
+        android:pathData="M 24.5,29.5 L 31,29.5 L 47.4,54.8 L 40.9,54.8 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Outer Right Wing / Branch (Proportionally scaled with top padding) -->
+    <path
+        android:pathData="M 77,29.5 L 83.5,29.5 L 67.1,54.8 L 60.6,54.8 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Central Trunk & Inner V (Proportionally scaled with top padding) -->
+    <path
+        android:pathData="M 35.1,29.5 L 41.7,29.5 L 54,40.9 L 66.3,29.5 L 72.9,29.5 L 59.7,54 L 59.7,78.6 L 48.3,78.6 L 48.3,54 Z"
+        android:fillColor="#FFFFFF" />
+
+</vector>

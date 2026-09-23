@@ -1,0 +1,6 @@
+{
+  "name": "Yashora Reel Generator",
+  "description": "AI Text-to-Reel and Short Video Generator with dynamic voice narration, multi-scene timeline editing, and instant MP4 export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
