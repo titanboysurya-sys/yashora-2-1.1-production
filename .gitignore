@@ -22,3 +22,9 @@ debug.keystore
 *.jks
 *.keystore
 "@ | Set-Content .gitignore
+*.aab
+*.apk
+app/release/
+*/release/
+
+**/google-services.json
