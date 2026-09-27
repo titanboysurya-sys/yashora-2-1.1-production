@@ -3863,6 +3863,29 @@ class MainViewModel(application: Application) : AndroidViewModel(application), T
 
     fun updateBgMusicCategory(category: String) {
         bgMusicCategory.value = category
+
+        val context = getApplication<Application>().applicationContext
+
+        // Map curated categories to raw local files
+        val (trackName, rawResId) = when(category) {
+            "Cinematic" -> "Cinematic Track" to com.ritvyom.yashoraReelgenerator.R.raw.bgm_cinematic
+            else -> "Upbeat Track" to com.ritvyom.yashoraReelgenerator.R.raw.bgm_upbeat
+        }
+
+        try {
+            val resourceUri = android.net.Uri.parse("android.resource://${context.packageName}/$rawResId")
+
+            // Set the selected local BGM as the timeline audio
+            setTimelineAudioTrack(
+                path = resourceUri.toString(),
+                name = trackName,
+                totalDurationMs = 30000L // default duration for built-in tracks
+            )
+
+            Log.i("MainViewModel", "Loaded built-in BGM: $trackName")
+        } catch (e: Exception) {
+            Log.e("MainViewModel", "Error loading built-in BGM", e)
+        }
     }
 
     fun editSceneFilterCategory(index: Int, category: String) {
