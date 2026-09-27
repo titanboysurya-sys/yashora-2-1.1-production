@@ -21,49 +21,49 @@ object VideoShareManager {
         val displayName: String,
         val packageNames: List<String>,
         val colorHex: Long,
-        val iconRes: Int? = null
+        val emoji: String
     ) {
         WHATSAPP(
             displayName = "WhatsApp",
             packageNames = listOf("com.whatsapp", "com.whatsapp.w4b"),
             colorHex = 0xFF25D366,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_whatsapp
+            emoji = "💬"
         ),
         INSTAGRAM(
             displayName = "Instagram",
             packageNames = listOf("com.instagram.android"),
             colorHex = 0xFFE1306C,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_instagram
+            emoji = "📸"
         ),
         TELEGRAM(
             displayName = "Telegram",
             packageNames = listOf("org.telegram.messenger", "org.telegram.messenger.web"),
             colorHex = 0xFF229ED9,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_telegram
+            emoji = "✈️"
         ),
         YOUTUBE(
             displayName = "YouTube / Shorts",
             packageNames = listOf("com.google.android.youtube"),
             colorHex = 0xFFFF0000,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_youtube
+            emoji = "▶️"
         ),
         FACEBOOK(
             displayName = "Facebook",
             packageNames = listOf("com.facebook.katana", "com.facebook.lite"),
             colorHex = 0xFF1877F2,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_facebook
+            emoji = "📘"
         ),
         X_TWITTER(
             displayName = "X (Twitter)",
             packageNames = listOf("com.twitter.android", "com.twitter.android.lite"),
-            colorHex = 0xFF000000,
-            iconRes = com.ritvyom.yashoraReelgenerator.R.drawable.ic_twitter_x
+            colorHex = 0xFF1DA1F2,
+            emoji = "✖️"
         ),
         SYSTEM_CHOOSER(
             displayName = "All Apps",
             packageNames = emptyList(),
             colorHex = 0xFF9C27B0,
-            iconRes = null
+            emoji = "🌐"
         )
     }
 

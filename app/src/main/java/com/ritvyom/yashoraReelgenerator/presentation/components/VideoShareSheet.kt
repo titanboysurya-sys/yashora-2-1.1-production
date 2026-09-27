@@ -36,7 +36,6 @@ import com.ritvyom.yashoraReelgenerator.presentation.utils.VideoShareManager
 import com.ritvyom.yashoraReelgenerator.presentation.utils.localize
 import kotlinx.coroutines.launch
 import java.io.File
-import androidx.compose.ui.res.painterResource
 
 private val DarkSheetBg = Color(0xFF131022)
 private val CardBg = Color(0xFF1E1B33)
@@ -391,8 +390,6 @@ fun VideoShareDialog(
     }
 }
 
-
-
 @Composable
 private fun SocialAppItem(
     app: VideoShareManager.SocialApp,
@@ -414,21 +411,10 @@ private fun SocialAppItem(
                 .border(1.5.dp, Color(app.colorHex).copy(alpha = if (isInstalled) 0.8f else 0.35f), CircleShape),
             contentAlignment = Alignment.Center
         ) {
-            if (app.iconRes != null) {
-                Icon(
-                    painter = painterResource(id = app.iconRes),
-                    contentDescription = app.displayName,
-                    tint = Color.Unspecified,
-                    modifier = Modifier.size(24.dp)
-                )
-            } else {
-                Icon(
-                    imageVector = Icons.Default.Share,
-                    contentDescription = app.displayName,
-                    tint = Color(app.colorHex),
-                    modifier = Modifier.size(24.dp)
-                )
-            }
+            Text(
+                text = app.emoji,
+                fontSize = 22.sp
+            )
         }
 
         Spacer(modifier = Modifier.height(6.dp))
