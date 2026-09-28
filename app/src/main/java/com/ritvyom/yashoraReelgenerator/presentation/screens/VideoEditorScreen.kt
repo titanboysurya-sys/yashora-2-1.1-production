@@ -1177,8 +1177,8 @@ fun VideoEditorScreen(
                                     val isBackmost = (layerIndex == 0)
 
                                     if (layer.type == "TEXT" && layer.content.isNotEmpty()) {
-                                        val textOffsetX = (maxWidth * layer.x - 50.dp).coerceIn(0.dp, (maxWidth - 80.dp).coerceAtLeast(0.dp))
-                                        val textOffsetY = (maxHeight * layer.y - 18.dp).coerceIn(0.dp, (maxHeight - 40.dp).coerceAtLeast(0.dp))
+                                        val textOffsetX = (maxWidth * layer.x - 50.dp)
+                                        val textOffsetY = (maxHeight * layer.y - 18.dp)
                                         val layerFontWeight = when (layer.font) {
                                             "Display Bold" -> FontWeight.Black
                                             "TikTok Style" -> FontWeight.ExtraBold
@@ -1417,8 +1417,8 @@ fun VideoEditorScreen(
                                             }
                                         }
                                     } else if (layer.type == "STICKER" && layer.content.isNotEmpty() && layer.content != "None") {
-                                        val stOffsetX = (maxWidth * layer.x - 25.dp).coerceIn(0.dp, (maxWidth - 50.dp).coerceAtLeast(0.dp))
-                                        val stOffsetY = (maxHeight * layer.y - 25.dp).coerceIn(0.dp, (maxHeight - 50.dp).coerceAtLeast(0.dp))
+                                        val stOffsetX = (maxWidth * layer.x - 25.dp)
+                                        val stOffsetY = (maxHeight * layer.y - 25.dp)
 
                                         Column(
                                             modifier = Modifier
@@ -1624,8 +1624,8 @@ fun VideoEditorScreen(
                             val pipPath = sc.pipMediaPath
                             if (!pipPath.isNullOrEmpty()) {
                                 val isPipSelected = (selectedLayerId == "layer_pip_${sc.sceneNumber}")
-                                val pipOffsetX = (maxWidth * sc.pipX - 60.dp).coerceIn(0.dp, (maxWidth - 80.dp).coerceAtLeast(0.dp))
-                                val pipOffsetY = (maxHeight * sc.pipY - 40.dp).coerceIn(0.dp, (maxHeight - 60.dp).coerceAtLeast(0.dp))
+                                val pipOffsetX = (maxWidth * sc.pipX - 60.dp)
+                                val pipOffsetY = (maxHeight * sc.pipY - 40.dp)
 
                                 Column(
                                     modifier = Modifier
@@ -5192,8 +5192,8 @@ fun VideoEditorScreen(
                                         modifier = Modifier
                                             .align(Alignment.TopStart)
                                             .offset(
-                                                x = (maxWidth * sc.textOverlayX - 50.dp).coerceIn(0.dp, (maxWidth - 100.dp).coerceAtLeast(0.dp)),
-                                                y = (maxHeight * sc.textOverlayY - 20.dp).coerceIn(0.dp, (maxHeight - 40.dp).coerceAtLeast(0.dp))
+                                                x = (maxWidth * sc.textOverlayX - 50.dp),
+                                                y = (maxHeight * sc.textOverlayY - 20.dp)
                                             )
                                             .graphicsLayer(
                                                 scaleX = sc.textOverlayScale,
@@ -5219,8 +5219,8 @@ fun VideoEditorScreen(
                                         modifier = Modifier
                                             .align(Alignment.TopStart)
                                             .offset(
-                                                x = (maxWidth * sc.stickerX - 25.dp).coerceIn(0.dp, (maxWidth - 50.dp).coerceAtLeast(0.dp)),
-                                                y = (maxHeight * sc.stickerY - 25.dp).coerceIn(0.dp, (maxHeight - 50.dp).coerceAtLeast(0.dp))
+                                                x = (maxWidth * sc.stickerX - 25.dp),
+                                                y = (maxHeight * sc.stickerY - 25.dp)
                                             )
                                             .graphicsLayer(
                                                 scaleX = sc.stickerScale,

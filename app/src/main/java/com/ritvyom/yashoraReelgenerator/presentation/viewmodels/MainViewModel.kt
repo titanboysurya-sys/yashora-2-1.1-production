@@ -3365,9 +3365,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application), T
         val currentList = activeScenes.value.toMutableList()
         if (index in currentList.indices) {
             currentList[index] = currentList[index].copy(
-                textOverlayX = x.coerceIn(0.05f, 0.95f),
-                textOverlayY = y.coerceIn(0.05f, 0.95f),
-                textOverlayScale = scale.coerceIn(0.3f, 4.0f),
+                textOverlayX = x.coerceIn(-0.5f, 1.5f),
+                textOverlayY = y.coerceIn(-0.5f, 1.5f),
+                textOverlayScale = scale.coerceIn(0.1f, 8.0f),
                 textOverlayRotation = (rotation % 360f + 360f) % 360f
             )
             activeScenes.value = currentList
@@ -3570,9 +3570,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application), T
         val currentList = activeScenes.value.toMutableList()
         if (sceneIndex in currentList.indices) {
             currentList[sceneIndex] = currentList[sceneIndex].copy(
-                pipX = x.coerceIn(0.05f, 0.95f),
-                pipY = y.coerceIn(0.05f, 0.95f),
-                pipScale = scale.coerceIn(0.15f, 2.5f)
+                pipX = x.coerceIn(-0.5f, 1.5f),
+                pipY = y.coerceIn(-0.5f, 1.5f),
+                pipScale = scale.coerceIn(0.1f, 5.0f)
             )
             activeScenes.value = currentList
             if (persist) {
@@ -3651,9 +3651,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application), T
             val idx = layers.indexOfFirst { it.id == layerId }
             if (idx != -1) {
                 layers[idx] = layers[idx].copy(
-                    x = x.coerceIn(0.05f, 0.95f),
-                    y = y.coerceIn(0.05f, 0.95f),
-                    scale = scale.coerceIn(0.3f, 4.0f),
+                    x = x.coerceIn(-0.5f, 1.5f),
+                    y = y.coerceIn(-0.5f, 1.5f),
+                    scale = scale.coerceIn(0.1f, 8.0f),
                     rotation = (rotation % 360f + 360f) % 360f
                 )
                 scene.saveCanvasLayers(layers)
